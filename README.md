@@ -30,13 +30,6 @@ Antes de ejecutar este proyecto, asegúrate de tener instalado lo siguiente en t
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/lol-detector.git
-   ```
-
-## Instalación 💻
-
-1. Clona este repositorio:
-   ```bash
    git clone https://github.com/Pex-Dev/lol_detector
    ```
 2. Entra al proyecto
