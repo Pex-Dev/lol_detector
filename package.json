@@ -1,0 +1,19 @@
+{
+  "name": "lol_detector",
+  "version": "1.0.0",
+  "description": "Aplicación que te avisa cuando llevas mucho tiempo jugando lol",
+  "main": "main.js",
+  "scripts": {
+    "dev": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^36.4.0"
+  },
+  "dependencies": {
+    "electron-store": "^10.0.1",
+    "ps-list": "^8.1.1"
+  }
+}

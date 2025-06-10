@@ -1,0 +1,176 @@
+@font-face {
+  font-family: "Fredoka";
+  src: url("fonts/Fredoka.ttf") format("truetype");
+  font-style: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100dvh;
+  font-family: Fredoka;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: rgb(122, 65, 39);
+  color: white;
+  box-shadow: -2px -2px 21px 14px rgba(0, 0, 0, 0.46);
+  -webkit-box-shadow: -2px -2px 21px 14px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: -2px -2px 21px 14px rgba(0, 0, 0, 0.46);
+  -webkit-app-region: drag;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 8px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+}
+
+.control-buttons-container {
+  display: flex;
+  -webkit-app-region: no-drag;
+}
+
+.control-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  font-family: Fredoka;
+  font-weight: 600;
+}
+
+.container {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.minimize-button:hover,
+.minimize-button:focus {
+  outline: none;
+  border-radius: 100%;
+  background-color: rgb(97, 52, 31);
+}
+.close-button:hover,
+.close-button:focus {
+  outline: none;
+  border-radius: 100%;
+  background-color: rgb(204, 65, 0);
+}
+
+.config-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 47px;
+  width: 25px;
+  height: 25px;
+}
+.config-button:focus {
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.46);
+  border-radius: 50%;
+}
+
+.submit-button,
+.reset-button {
+  border: none;
+  font-family: Fredoka;
+  font-size: 16px;
+  color: white;
+  border-radius: 8px;
+  padding: 5px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.submit-button {
+  background-color: #0957b0;
+}
+.submit-button:hover {
+  background-color: #1973da;
+}
+.reset-button {
+  background-color: red;
+}
+.reset-button:hover {
+  background-color: rgb(241, 104, 40);
+}
+
+.bg-blue {
+  background: #0957b0;
+  background: linear-gradient(
+    0deg,
+    rgba(9, 87, 176, 1) 0%,
+    rgba(145, 209, 255, 1) 100%
+  );
+}
+
+.bg-orange {
+  background: #ba9011;
+  background: linear-gradient(
+    0deg,
+    rgba(186, 144, 17, 1) 0%,
+    rgba(237, 255, 117, 1) 100%
+  );
+}
+
+.bg-red {
+  background: #c40404;
+  background: linear-gradient(
+    0deg,
+    rgba(196, 4, 4, 1) 0%,
+    rgba(247, 164, 92, 1) 100%
+  );
+}
+
+.image {
+  width: 100%;
+  image-rendering: pixelated;
+  display: block;
+}
+
+.message-container {
+  padding: 10px;
+  background-color: rgb(26, 26, 26);
+  color: white;
+  border-radius: 10px;
+  border: 2px solid white;
+  min-height: 70px;
+}

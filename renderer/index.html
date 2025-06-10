@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lol Detector</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container bg-blue" id="container">
+      <button class="config-button" id="button-config">
+        <img src="sprites/configIcon.png" alt="Icono configurar" />
+      </button>
+      <header>
+        <h1 id="title">Lol cerrado</h1>
+        <div class="control-buttons-container">
+          <button
+            class="control-button minimize-button"
+            id="minimize"
+            aria-label="Minimizar"
+          >
+            <img src="sprites/minimizeIcon.png" alt="Icono minimizar" />
+          </button>
+          <button
+            class="control-button close-button"
+            id="close"
+            aria-label="Cerrar"
+          >
+            <img src="sprites/closeIcon.png" alt="Icono cerrar" />
+          </button>
+        </div>
+      </header>
+      <img
+        class="image"
+        id="image"
+        src="sprites/teemo_01.png"
+        alt="Estado de teemo"
+      />
+      <div class="message-container">
+        <p class="message" id="message">
+          ¡Buen trabajo, invocador! Hoy no has tocado la Grieta
+        </p>
+      </div>
+    </div>
+
+    <script src="js/indexRenderer.js"></script>
+  </body>
+</html>
